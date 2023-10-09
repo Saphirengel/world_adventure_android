@@ -1,8 +1,5 @@
 package com.example.worldadventure.Charakter
 
-import android.widget.TextView
-import com.example.worldadventure.databinding.CharakterErstellenBinding
-
 class Charaktererstellung(
 
     val strenghtRange: IntRange,
