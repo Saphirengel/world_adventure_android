@@ -17,8 +17,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_werte_name"
-        android:layout_width="227dp"
-        android:layout_height="195dp"
+        android:layout_width="228dp"
+        android:layout_height="253dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:textColorHint="#FFEB3B"
