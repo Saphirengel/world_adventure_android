@@ -166,7 +166,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/wert_glück_zahl"
+            android:id="@+id/wert_glueck_zahl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

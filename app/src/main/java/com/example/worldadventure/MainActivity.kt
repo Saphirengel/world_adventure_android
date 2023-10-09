@@ -25,7 +25,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = CharaktererstellenBinding.inflate(layoutInflater)
         val view = binding.root
-       hero =  binding.wertStaerkeZahl.toString()
+       strenght =  binding.wertStaerkeZahl.toString()
+       dextery =  binding.wertGeschicklichkeitZahl.toString()
+       intelligence =  binding.wertIntelligenzZahl.toString()
+       constituion =  binding.wertKonstitutionZahl.toString()
+       wisdom =  binding.wertWeisheitZahl.toString()
+       charisma =  binding.wertCharismaZahl.toString()
+       luck =  binding.wertGlueckZahl.toString()
 
         //setContentView(R.layout.intro)
         //setContentView(R.layout.story)
