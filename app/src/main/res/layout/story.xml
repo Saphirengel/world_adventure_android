@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1028dp"
+        android:layout_height="766dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/hintergrund"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Krieg bleibt Krieg "
+        android:textColor="#FFEB3B"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Wann es zuletzt mal keinen Krieg gab ist lang her, als der Alte König ins Grab stieg blieb nix außer Asche und Tod. Doch was war geschehen nur um den Thron zu erben fingen seine Kinder an sich gegenseitig zu bekriegen, was zu Leid und Elend führte. Hinzukam noch das sich keiner um die Monster gekümmert haben, die jetzt die Lande überrennen."
+        android:textColor="#FFEB3B"
+        android:textSize="34sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:includeFontPadding="false"
+        android:text="Seit du ein Kind bist kennst du nur deine Gefängnisszelle, nichtmal den Grund kennst du. Doch heute ist irgendwas anders, es liegt ein Brandgeruch in der Luft. Du schaust zur Tür und bevor du realisiern kannst was passiert öffnet eine Wache deine Tür und bricht danach auf der Schwelle deiner Zelle zusammen."
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="-3dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
