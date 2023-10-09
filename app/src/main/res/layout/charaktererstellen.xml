@@ -111,7 +111,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_werte_zahl"
         android:layout_width="80dp"
-        android:layout_height="195dp"
+        android:layout_height="252dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toEndOf="@+id/text_werte_name"
