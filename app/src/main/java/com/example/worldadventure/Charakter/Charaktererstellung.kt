@@ -1,8 +1,10 @@
 package com.example.worldadventure.Charakter
 
 import android.widget.TextView
+import com.example.worldadventure.databinding.CharakterErstellenBinding
 
 class Charaktererstellung(
+
     val strenghtRange: IntRange,
     val dexteryRange: IntRange,
     val intelligenceRange: IntRange,
@@ -11,6 +13,7 @@ class Charaktererstellung(
     val charismaRange: IntRange,
     val luckRange: IntRange
 ) {
+
     var strenght:Int = 0
     var dextery :Int = 0
     var intelligence : Int= 0
@@ -32,4 +35,9 @@ fun zufallsZahlen() {
       luck = luckRange.random()
  }
 
-}
+
+
+
+
+    }
+
