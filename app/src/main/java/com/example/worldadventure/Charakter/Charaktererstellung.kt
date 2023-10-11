@@ -1,6 +1,10 @@
 package com.example.worldadventure.Charakter
 
+import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.example.worldadventure.MainActivity
 import com.example.worldadventure.databinding.CharaktererstellenBinding
 
 class Charaktererstellung(
@@ -12,45 +16,42 @@ class Charaktererstellung(
     val wisdomRange: IntRange,
     val charismaRange: IntRange,
     val luckRange: IntRange
-) {
+) : AppCompatActivity() {
     private lateinit var binding: CharaktererstellenBinding
-    var strenght:Int = 0
-    var dextery :Int = 0
-    var intelligence : Int= 0
-    var constuion :Int = 0
+    override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+        binding = CharaktererstellenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        zufallsZahlen()
+        binding.tvStaerkeZahl.text = strenght.toString()
+}
+
+    var strenght: Int = 0
+    var dextery: Int = 0
+    var intelligence: Int = 0
+    var constuion: Int = 0
     var wisdom: Int = 0
     var charisma: Int = 0
     var luck: Int = 0
 
 
+    fun zufallsZahlen() {
 
-fun zufallsZahlen() {
-
-    strenght = strenghtRange.random()
-      dextery = dexteryRange.random()
-      intelligence = intelligenceRange.random()
-      constuion = constituionRange.random()
-      wisdom = wisdomRange.random()
-      charisma = charismaRange.random()
-      luck = luckRange.random()
-
-    strenght = binding.tvStaerkeZahl.toInt()
-    dextery = binding.tvGeschicklichkeitZahl.toInt()
-    intelligence = binding.tvIntelligenzZahl.toInt()
-    constuion = binding.tvKonstitutionZahl.toInt()
-    wisdom = binding.tvWeisheitZahl.toInt()
-    charisma = binding.tvCharismaZahl.toInt()
-    luck = binding.tvGlueckZahl.toInt()
- }
-
-
-
+        strenght = strenghtRange.random()
+        dextery = dexteryRange.random()
+        intelligence = intelligenceRange.random()
+        constuion = constituionRange.random()
+        wisdom = wisdomRange.random()
+        charisma = charismaRange.random()
+        luck = luckRange.random()
 
 
     }
 
-private fun TextView.toInt(): Int {
-  return text.toString().toIntOrNull() ?: 0
+
+
 
 }
+
+
 
