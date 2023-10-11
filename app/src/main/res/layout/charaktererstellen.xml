@@ -13,10 +13,10 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/hintergrund" />
 
     <LinearLayout
@@ -91,9 +91,16 @@
             android:text="Glück"
             android:textColor="#FFC107"
             android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ll_wert_zahl"
         android:layout_width="202dp"
         android:layout_height="230dp"
         android:layout_marginStart="32dp"
@@ -151,5 +158,272 @@
             android:textColor="#FFC107"
             android:textSize="24sp" />
     </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_gesinnung"
+        android:layout_width="318dp"
+        android:layout_height="429dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_wert_name">
+
+        <RadioButton
+            android:id="@+id/rb_rgut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Rechtschafend Gut"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_gut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Gut"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_chgut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Chaotisch Gut"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_rneutral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Rechtschafend Neutral"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_neutral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Neutral"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_chneutral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Chaotisch Neutral"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_rboese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Rechtschafend Böse"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_boese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Böse"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_chboese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Chaotisch Böse"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_pfad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/ll_wert_zahl"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_wdk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Weg des Krieges"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_wdh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Weg der Heimlichkeit"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_wdm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Weg der Magie"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/ib_neuwuerfeln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/rg_gesinnung"
+        app:layout_constraintTop_toBottomOf="@+id/ll_wert_zahl"
+        app:srcCompat="@android:drawable/stat_notify_sdcard" />
+
+    <RadioGroup
+        android:id="@+id/rg_geschlecht"
+        android:layout_width="141dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/rg_pfad"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_mann"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Mann"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_frau"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Frau"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_divers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Divers"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/sp_oberrasse"
+        android:layout_width="438dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/ll_wert_zahl"
+        app:layout_constraintTop_toBottomOf="@+id/rg_pfad" />
+
+    <Spinner
+        android:id="@+id/sp_unterrasse"
+        android:layout_width="435dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/ll_wert_zahl"
+        app:layout_constraintTop_toBottomOf="@+id/sp_oberrasse" />
+
+    <EditText
+        android:id="@+id/et_charname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:fontFamily="@font/bridgnorth_regular"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="#FFC107"
+        android:textColorHint="#FFC107"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rg_gesinnung" />
+
+    <Button
+        android:id="@+id/b_speichern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/bridgnorth_regular"
+        android:text="Speichern"
+        android:textColor="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_charname" />
+
+    <Button
+        android:id="@+id/b_abbrechen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/bridgnorth_regular"
+        android:text="Abbrechen"
+        android:textColor="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b_speichern" />
+
+    <ImageView
+        android:id="@+id/iv_wappen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/rg_gesinnung"
+        app:layout_constraintTop_toBottomOf="@+id/ib_neuwuerfeln"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="132dp"
+        android:layout_height="317dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_charname"
+        app:layout_constraintStart_toEndOf="@+id/iv_wappen"
+        app:layout_constraintTop_toBottomOf="@+id/sp_unterrasse"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/tv_rassenbeschreibung"
+        android:layout_width="194dp"
+        android:layout_height="321dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/sp_unterrasse" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
