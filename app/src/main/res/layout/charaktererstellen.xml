@@ -8,324 +8,148 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="1028dp"
-        android:layout_height="766dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/hintergrund"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="2dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/hintergrund" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_werte_name"
-        android:layout_width="228dp"
-        android:layout_height="253dp"
+    <LinearLayout
+        android:id="@+id/ll_wert_name"
+        android:layout_width="167dp"
+        android:layout_height="230dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:textColorHint="#FFEB3B"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/wert_staerke"
-            android:layout_width="wrap_content"
-            android:layout_height="23dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Stärke"
-            android:textColor="#FFEB3B"
-            android:textColorHighlight="#FFEB3B"
-            android:textColorHint="#FFEB3B"
-            android:textColorLink="#FFEB3B"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/wert_geschicklichkeit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Geschicklichkeit"
-            android:textColor="#FFEB3B"
-            android:textColorHighlight="#FFEB3B"
-            android:textColorHint="#FFEB3B"
-            android:textColorLink="#FFEB3B"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/wert_intelligenz"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Intelligenz"
-            android:textColor="#FFEB3B"
-            android:textColorHint="#FFEB3B"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/wert_konstitution"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Konstitution"
-            android:textColor="#FFEB3B"
-            android:textColorHint="#FFEB3B"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/wert_weisheit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Weisheit"
-            android:textColor="#FFEB3B"
-            android:textColorHint="#FFEB3B"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/wert_charisma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Charisma"
-            android:textColor="#FFEB3B"
-            android:textColorHint="#FFEB3B"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/wert_glueck"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Glück"
-            android:textColor="#FFEB3B"
-            android:textColorHint="#FFEB3B"
-            android:textSize="24sp" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_werte_zahl"
-        android:layout_width="80dp"
-        android:layout_height="252dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toEndOf="@+id/text_werte_name"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView">
 
         <TextView
-            android:id="@+id/wert_staerke_zahl"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_staerke"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FFEB3B"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Stärke"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/wert_geschicklichkeit_zahl"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_geschicklichkeit"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FFEB3B"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Geschicklichkeit"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/wert_intelligenz_zahl"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_intelligenz"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FFEB3B"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Intelligenz"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/wert_konstitution_zahl"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_konstitution"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FFEB3B"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Konstitution"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/wert_weisheit_zahl"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_weisheit"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FFEB3B"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Weisheit"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/wert_charisma_zahl"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_charisma"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FFEB3B"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Charisma"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/wert_glueck_zahl"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_glueck"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FFEB3B"
+            android:fontFamily="@font/bridgnorth_regular"
+            android:text="Glück"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
 
-    <RadioGroup
-        android:id="@+id/rg_gesinnung"
-        android:layout_width="348dp"
-        android:layout_height="441dp"
-        android:layout_marginStart="46dp"
+    <LinearLayout
+        android:layout_width="202dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintStart_toEndOf="@+id/text_werte_zahl"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/ll_wert_name"
         app:layout_constraintTop_toTopOf="parent">
 
-        <RadioButton
-            android:id="@+id/rb_rgut"
+        <TextView
+            android:id="@+id/tv_staerke_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Rechtschafend Gut"
-            android:textColor="#FFEB3B"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
-        <RadioButton
-            android:id="@+id/rb_gut"
+        <TextView
+            android:id="@+id/tv_geschicklichkeit_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Gut"
-            android:textColor="#FFEB3B"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
-        <RadioButton
-            android:id="@+id/rb_chgut"
+        <TextView
+            android:id="@+id/tv_intelligenz_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Chaotisch Gut"
-            android:textColor="#FFEB3B"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
-        <RadioButton
-            android:id="@+id/rb_rneutral"
+        <TextView
+            android:id="@+id/tv_konstitution_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Rechtschafend Neutral"
-            android:textColor="#FFEB3B"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
-        <RadioButton
-            android:id="@+id/rb_neutral"
+        <TextView
+            android:id="@+id/tv_weisheit_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Neutral"
-            android:textColor="#FFEB3B"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
-        <RadioButton
-            android:id="@+id/rb_chneutral"
+        <TextView
+            android:id="@+id/tv_charisma_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Chaotisch Neutral"
-            android:textColor="#FFEB3B"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
 
-        <RadioButton
-            android:id="@+id/rb_rboese"
+        <TextView
+            android:id="@+id/tv_glueck_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Rechtschafend Böse"
-            android:textColor="#FFEB3B"
+            android:textColor="#FFC107"
             android:textSize="24sp" />
-
-        <RadioButton
-            android:id="@+id/rb_boese"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Böse"
-            android:textColor="#FFEB3B"
-            android:textSize="24sp" />
-
-        <RadioButton
-            android:id="@+id/rb_chboese"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Chaotisch Böse"
-            android:textColor="#FFEB3B"
-            android:textSize="24sp" />
-    </RadioGroup>
-
-    <EditText
-        android:id="@+id/ed_char_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="32dp"
-        android:ems="10"
-        android:fontFamily="@font/bridgnorth_regular"
-        android:hint="Name"
-        android:inputType="text"
-        android:textColor="#FFEB3B"
-        android:textColorHint="#FFEB3B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/rg_gender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="76dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rg_gesinnung"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/rb_mann"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Mann"
-            android:textColor="#FFEB3B"
-            android:textSize="24sp" />
-
-        <RadioButton
-            android:id="@+id/rb_frau"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bridgnorth_regular"
-            android:text="Frau"
-            android:textColor="#FFEB3B"
-            android:textSize="24sp" />
-    </RadioGroup>
-
-    <Spinner
-        android:id="@+id/sp_oberrasse"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_werte_name" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sp_oberrasse" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
