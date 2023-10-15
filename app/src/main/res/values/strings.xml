@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">World Adventure</string>
+
+    <string-array name="oberrassen">
+        <item>Goblonoiden</item>
+        <item>Elfen</item>
+        <item>Zwerge</item>
+        <item>Gnome</item>
+        <item>Tiermenschen</item>
+        <item>Humanoide</item>
+        <item>Untote</item>
+        <item>Konstrukte</item>
+        <item>Fabelwesen</item>
+    </string-array>
 </resources>
