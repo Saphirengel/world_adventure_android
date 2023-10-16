@@ -346,7 +346,7 @@
     <Spinner
         android:id="@+id/sp_unterrasse"
         android:layout_width="435dp"
-        android:layout_height="22dp"
+        android:layout_height="24dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toEndOf="@+id/ll_wert_zahl"

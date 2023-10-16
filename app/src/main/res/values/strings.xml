@@ -2,7 +2,7 @@
     <string name="app_name">World Adventure</string>
 
     <string-array name="oberrassen">
-        <item>Goblonoiden</item>
+        <item>Goblinoiden</item>
         <item>Elfen</item>
         <item>Zwerge</item>
         <item>Gnome</item>
@@ -11,5 +11,43 @@
         <item>Untote</item>
         <item>Konstrukte</item>
         <item>Fabelwesen</item>
+    </string-array>
+    <string-array name = "Goblinoiden">
+        <item>Goblins</item>
+        <item>Orks</item>
+        <item>Trolle</item>
+    </string-array><string-array name = "Elfen">
+        <item>Blutelfen</item>
+        <item>Dunkelelfen</item>
+        <item>Eiselfen</item>
+        <item>Hochelfen</item>
+        <item>Meereselfen</item>
+        <item>Mondelfen</item>
+        <item>Nachtelfen</item>
+        <item>Sonnenelfen</item>
+        <item>Waldelfen</item>
+    </string-array><string-array name = "Zwerge">
+        <item>Zwewrge</item>
+    </string-array><string-array name = "Gnome">
+        <item>Gnome</item>
+    </string-array><string-array name = "Tiermenschen">
+        <item>Drachkin</item>
+        <item>Mänaden</item>
+        <item>Naga</item>
+        <item>Tauren</item>
+        <item>Zentauren</item>
+    </string-array><string-array name = "Humanoide">
+        <item>Engeln</item>
+        <item>Halbling</item>
+        <item>Menschen</item>
+        <item>Tieflinge</item>
+    </string-array><string-array name = "Untote">
+        <item>Skelette</item>
+        <item>Zombie</item>
+    </string-array><string-array name = "Konstrukte">
+        <item>Golem</item>
+    </string-array>
+    <string-array name = "Fabelwesen">
+        <item>Dschjjinns</item>
     </string-array>
 </resources>
