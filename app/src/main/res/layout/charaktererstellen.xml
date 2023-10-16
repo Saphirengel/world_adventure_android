@@ -340,6 +340,8 @@
         android:layout_height="24dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:background="#3F51B5"
+        android:spinnerMode="dropdown"
         app:layout_constraintStart_toEndOf="@+id/ll_wert_zahl"
         app:layout_constraintTop_toBottomOf="@+id/rg_pfad" />
 
@@ -349,6 +351,7 @@
         android:layout_height="24dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:background="#3F51B5"
         app:layout_constraintStart_toEndOf="@+id/ll_wert_zahl"
         app:layout_constraintTop_toBottomOf="@+id/sp_oberrasse" />
 

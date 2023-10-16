@@ -33,7 +33,7 @@ try{
             override fun onItemSelected(parent: AdapterView<*>?,view: View?, position: Int, id: Long) {
                 val selectedItem = parent?.getItemAtPosition(position).toString()
                 val adapter2: ArrayAdapter<CharSequence> = when(selectedItem){
-                    "Goblinoide" -> ArrayAdapter.createFromResource(this@MainActivity, R.array.Goblinoiden,android.R.layout.simple_spinner_item)
+                    "Goblinoiden" -> ArrayAdapter.createFromResource(this@MainActivity, R.array.Goblinoiden,android.R.layout.simple_spinner_item)
                     "Elfen" -> ArrayAdapter.createFromResource(this@MainActivity, R.array.Elfen,android.R.layout.simple_spinner_item)
                     "Zwerge" -> ArrayAdapter.createFromResource(this@MainActivity, R.array.Zwerge,android.R.layout.simple_spinner_item)
                     "Gnome" -> ArrayAdapter.createFromResource(this@MainActivity, R.array.Gnome,android.R.layout.simple_spinner_item)
