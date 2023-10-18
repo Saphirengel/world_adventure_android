@@ -1,53 +1,42 @@
 <resources>
     <string name="app_name">World Adventure</string>
 
-    <string-array name="oberrassen">
-        <item>Goblinoiden</item>
-        <item>Elfen</item>
-        <item>Zwerge</item>
-        <item>Gnome</item>
-        <item>Tiermenschen</item>
-        <item>Humanoide</item>
-        <item>Untote</item>
-        <item>Konstrukte</item>
-        <item>Fabelwesen</item>
-    </string-array>
-    <string-array name = "Goblinoiden">
-        <item>Goblins</item>
-        <item>Orks</item>
-        <item>Trolle</item>
-    </string-array><string-array name = "Elfen">
-        <item>Blutelfen</item>
-        <item>Dunkelelfen</item>
-        <item>Eiselfen</item>
-        <item>Hochelfen</item>
-        <item>Meereselfen</item>
-        <item>Mondelfen</item>
-        <item>Nachtelfen</item>
-        <item>Sonnenelfen</item>
-        <item>Waldelfen</item>
-    </string-array><string-array name = "Zwerge">
-        <item>Zwewrge</item>
-    </string-array><string-array name = "Gnome">
-        <item>Gnome</item>
-    </string-array><string-array name = "Tiermenschen">
-        <item>Drachkin</item>
-        <item>Mänaden</item>
-        <item>Naga</item>
-        <item>Tauren</item>
-        <item>Zentauren</item>
-    </string-array><string-array name = "Humanoide">
-        <item>Engeln</item>
-        <item>Halbling</item>
-        <item>Menschen</item>
-        <item>Tieflinge</item>
-    </string-array><string-array name = "Untote">
-        <item>Skelette</item>
-        <item>Zombie</item>
-    </string-array><string-array name = "Konstrukte">
-        <item>Golem</item>
-    </string-array>
-    <string-array name = "Fabelwesen">
-        <item>Dschjjinns</item>
-    </string-array>
+    <string name = "oberrassen">Oberrasse</string>
+    <string name = "goblinoiden">Goblinoiden</string>
+    <string name="elfen">Elfen</string>
+    <string name="zwerg">Zwerge</string>
+    <string name="gnom">Gnome</string>
+    <string name="tiermenschen">Tiermenschen</string>
+    <string name="humanoide">Humanoide</string>
+    <string name="untot">Untote</string>
+    <string name="konstrukte">Konstrukte</string>
+    <string name="fabelwesen">Fabelwesen</string>
+
+    <string name = "goblins">Goblin</string>
+    <string name = "ork">Ork</string>
+    <string name = "trolle">Trolle</string>
+    <string name = "blutelfen">Blutelfen</string>
+    <string name = "dunkelelfen">Dunkelelfen</string>
+    <string name = "eisenelfen">Eiselfen</string>
+    <string name = "hochelfen">Hochelfen</string>
+    <string name = "meereselfen">Meereselfen</string>
+    <string name = "mondelfen">Mondelfen</string>
+    <string name = "nachtelfen">Nachtelfen</string>
+    <string name = "sonnenelfen">Sonnenelfen</string>
+    <string name = "waldelfen">Waldelfen</string>
+    <string name = "zwerge">Zwerge</string>
+    <string name = "gnome">Gnome</string>
+    <string name = "drachkin">Drachkin</string>
+    <string name = "maenade">Mänaden</string>
+    <string name = "naga">Nagas</string>
+    <string name = "tauren">Tauren</string>
+    <string name = "zentauren">Zentauren</string>
+    <string name = "engel">Engel</string>
+    <string name = "halbling">Halblinge</string>
+    <string name = "mensch">Menschen</string>
+    <string name = "tieflinge">Tieflinge</string>
+    <string name = "skelett">Skelett</string>
+    <string name = "zombie">Zombie</string>
+    <string name = "golem">Golem</string>
+    <string name = "Dchjiinn">Dschjiinn</string>
 </resources>
