@@ -1,12 +1,35 @@
 package com.example.worldadventure.data
 
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.worldadventure.R
+import com.example.worldadventure.databinding.CharaktererstellenBinding
 
-class CharakterErstellung {
-    fun charWerte():List<CharakterWerte>{
-        return listOf(
-            CharakterWerte(1..20,1..20,1..20,1..20,1..20,1..20,1..20)
-    )}
+class CharakterErstellung(): AppCompatActivity() {
+    private lateinit var binding: CharaktererstellenBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding =CharaktererstellenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        var hero= CharakterWerte(1..20,1..20,1..20,1..20,1..20,1..20,1..20)
+        var strenght: Int = hero.strenghtRange.random()
+        var dextery: Int = hero.dexteryRange.random()
+        var intelligence: Int = hero.intelligenceRange.random()
+        var constuion: Int = hero.constituionRange.random()
+        var wisdom: Int = hero.wisdomRange.random()
+        var charisma: Int = hero.charismaRange.random()
+        var luck: Int = hero.luckRange.random()
+
+        binding.tvStaerkeZahl.text = (strenght.toString())
+        binding.tvGeschicklichkeit.text = (dextery.toString())
+        binding.tvIntelligenzZahl.text = (intelligence.toString())
+        binding.tvKonstitutionZahl.text = (constuion.toString())
+        binding.tvWeisheitZahl.text = (wisdom.toString())
+        binding.tvCharismaZahl.text = (charisma.toString())
+        binding.tvGlueckZahl.text = (luck.toString())
+    }
     fun oberRassenWahl(): List<OberrassenWahl>{
         return listOf(
             OberrassenWahl(R.string.goblinoiden,0,5,0,10,0,0,0,0,0,10,0,0,10,0),
@@ -21,33 +44,36 @@ class CharakterErstellung {
         )}
     fun unterRassenWahl(): List<UnterrassenWahl>{
         return listOf(
-            UnterrassenWahl(R.string.goblins,0,10,10,,0,5,0,0,10,0,0,0,0,0,0),
+            UnterrassenWahl(R.string.goblins,0,10,10,0,5,0,0,10,0,0,0,0,0,0),
             UnterrassenWahl(R.string.ork,10,5,0,10,0,0,0,0,0,15,0,0,15,0),
             UnterrassenWahl(R.string.trolle,15,0,0,15,0,0,0,0,0,15,0,0,20,0),
-            UnterrassenWahl(R.string.blutelfen,),
-            UnterrassenWahl(R.string.dunkelelfen),
-            UnterrassenWahl(R.string.eisenelfen),
-            UnterrassenWahl(R.string.hochelfen),
-            UnterrassenWahl(R.string.meereselfen),
-            UnterrassenWahl(R.string.mondelfen),
-            UnterrassenWahl(R.string.nachtelfen),
-            UnterrassenWahl(R.string.sonnenelfen),
-            UnterrassenWahl(R.string.waldelfen),
-            UnterrassenWahl(R.string.zwerge),
-            UnterrassenWahl(R.string.gnome),
-            UnterrassenWahl(R.string.drachkin),
-            UnterrassenWahl(R.string.maenade),
-            UnterrassenWahl(R.string.naga),
-            UnterrassenWahl(R.string.tauren),
-            UnterrassenWahl(R.string.zentauren),
-            UnterrassenWahl(R.string.engel),
-            UnterrassenWahl(R.string.halbling),
-            UnterrassenWahl(R.string.mensch),
-            UnterrassenWahl(R.string.tieflinge),
-            UnterrassenWahl(R.string.skelett),
-            UnterrassenWahl(R.string.zombie),
-            UnterrassenWahl(R.string.golem),
-            UnterrassenWahl(R.string.Dchjiinn)
+            UnterrassenWahl(R.string.blutelfen,0,0,10,0,0,5,0,5,0,0,5,0,0,0),
+            UnterrassenWahl(R.string.dunkelelfen,10,10,10,0,0,0,0,0,0,0,0,0,0,0),
+            UnterrassenWahl(R.string.eisenelfen,0,0,15,0,5,5,0,5,0,0,0,0,0,0),
+            UnterrassenWahl(R.string.hochelfen,0,0,20,0,15,5,0,15,0,0,10,0,5,0),
+            UnterrassenWahl(R.string.meereselfen,0,15,5,10,15,10,0,0,0,0,0,0,0,10),
+            UnterrassenWahl(R.string.mondelfen,0,0,20,0,20,5,0,20,5,0,10,0,5,0),
+            UnterrassenWahl(R.string.nachtelfen,5,5,5,0,0,0,0,0,0,0,10,0,0,0),
+            UnterrassenWahl(R.string.sonnenelfen,5,0,10,0,5,0,0,0,0,0,0,0,0,0),
+            UnterrassenWahl(R.string.waldelfen,5,20,5,15,0,0,0,0,0,0,0,0,20,0),
+            UnterrassenWahl(R.string.zwerge,15,5,0,20,0,0,0,0,0,5,0,0,15,0),
+            UnterrassenWahl(R.string.gnome,0,15,20,0,0,0,10,20,0,0,5,0,0,0),
+            UnterrassenWahl(R.string.drachkin,15,15,15,15,15,0,0,0,0,0,0,0,20,0),
+            UnterrassenWahl(R.string.maenade,0,10,0,0,0,0,0,0,0,0,0,0,0,0),
+            UnterrassenWahl(R.string.naga,0,10,0,0,10,0,0,0,0,0,0,0,10,0),
+            UnterrassenWahl(R.string.tauren,10,0,0,10,0,0,0,0,0,0,0,0,0,0),
+            UnterrassenWahl(R.string.zentauren,20,10,0,15,0,0,0,0,0,0,0,0,10,0),
+            UnterrassenWahl(R.string.engel,10,10,10,10,10,10,10,0,0,0,0,0,0,0,),
+            UnterrassenWahl(R.string.halbling,0,15,5,0,0,0,10,10,0,0,10,0,0,0),
+            UnterrassenWahl(R.string.mensch,0,0,0,0,0,0,0,0,0,0,0,0,0,0),
+            UnterrassenWahl(R.string.tieflinge,10,0,10,10,10,0,0,0,0,0,0,0,20,5),
+            UnterrassenWahl(R.string.skelett,0,0,0,0,0,0,0,0,0,0,10,0,20,0),
+            UnterrassenWahl(R.string.zombie,0,0,0,15,0,0,0,0,0,20,0,0,20,0),
+            UnterrassenWahl(R.string.golem,0,0,0,20,0,0,0,0,0,0,0,0,15,0),
+            UnterrassenWahl(R.string.Dchjiinn,0,0,20,0,20,0,0,0,0,0,0,0,10,0)
         )
     }
-}
+
+
+
+    }

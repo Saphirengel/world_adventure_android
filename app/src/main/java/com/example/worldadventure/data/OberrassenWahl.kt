@@ -1,7 +1,7 @@
 package com.example.worldadventure.data
 
 data class OberrassenWahl(
-    var name: Int,
+    var name: Int?,
     var strenghtPlus: Int?,
     var dexteryPlus: Int?,
     var intelligencePlus: Int?,
@@ -15,5 +15,5 @@ data class OberrassenWahl(
     var constuionMinus: Int?,
     var wisdomMinus: Int?,
     var charismaMinus: Int?,
-    var luckPlusMinus: Int?,
+    var luckMinus: Int?,
     )

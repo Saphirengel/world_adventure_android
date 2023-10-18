@@ -15,5 +15,5 @@ data class UnterrassenWahl(
     var constuionMinus: Int?,
     var wisdomMinus: Int?,
     var charismaMinus: Int?,
-    var luckPlusMinus: Int?,
+    var luckMinus: Int?,
 )
