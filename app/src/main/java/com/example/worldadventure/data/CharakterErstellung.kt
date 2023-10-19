@@ -13,41 +13,26 @@ class CharakterErstellung(): AppCompatActivity() {
         binding =CharaktererstellenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var hero= CharakterWerte(1..20,1..20,1..20,1..20,1..20,1..20,1..20)
-        var strenght: Int = hero.strenghtRange.random()
-        var dextery: Int = hero.dexteryRange.random()
-        var intelligence: Int = hero.intelligenceRange.random()
-        var constuion: Int = hero.constituionRange.random()
-        var wisdom: Int = hero.wisdomRange.random()
-        var charisma: Int = hero.charismaRange.random()
-        var luck: Int = hero.luckRange.random()
 
-        binding.tvStaerkeZahl.text = (strenght.toString())
-        binding.tvGeschicklichkeit.text = (dextery.toString())
-        binding.tvIntelligenzZahl.text = (intelligence.toString())
-        binding.tvKonstitutionZahl.text = (constuion.toString())
-        binding.tvWeisheitZahl.text = (wisdom.toString())
-        binding.tvCharismaZahl.text = (charisma.toString())
-        binding.tvGlueckZahl.text = (luck.toString())
     }
     fun oberRassenWahl(): List<OberrassenWahl>{
         return listOf(
-            OberrassenWahl(R.string.goblinoiden,0,5,0,10,0,0,0,0,0,10,0,0,10,0),
-            OberrassenWahl(R.string.elfen,0, 10,5,0,10,0,0,5,0,0,5,0,0,0),
-            OberrassenWahl(R.string.zwerg,10,0,0,10,0,0,5,0,0,0,0,0,5,0),
-            OberrassenWahl(R.string.gnome,0,0,10,0,10,5,10,10,0,0,10,0,0,0),
-            OberrassenWahl(R.string.tiermenschen,10,10,0,0,0,0,0,0,0,0,0,0,10,0),
-            OberrassenWahl(R.string.humanoide,0,0,0,0,0,0,5,0,0,0,0,0,0,0),
-            OberrassenWahl(R.string.untot,0,10,0,15,10,0,0,0,0,0,0,0,15,5),
-            OberrassenWahl(R.string.konstrukte,15,0,0,15,5,0,0,0,15,0,0,0,10,0),
-            OberrassenWahl(R.string.fabelwesen,0,0,15,5,20,0,0,0,0,0,0,0,0,0,),
+            OberrassenWahl(R.string.goblinoiden,0,5,-10,10,0,-10,0),
+            OberrassenWahl(R.string.elfen,-5, 10,5,-5,10,0,0),
+            OberrassenWahl(R.string.zwerg,10,0,0,10,0,-5,5),
+            OberrassenWahl(R.string.gnome,-10,0,10,-10,10,5,10),
+            OberrassenWahl(R.string.tiermenschen,10,10,0,0,0,-10,0),
+            OberrassenWahl(R.string.humanoide,0,0,0,0,0,0,5),
+            OberrassenWahl(R.string.untot,0,10,0,15,10,-15,-5),
+            OberrassenWahl(R.string.konstrukte,15,-15,0,15,5,-10,0,),
+            OberrassenWahl(R.string.fabelwesen,0,0,15,5,20,0,0),
         )}
     fun unterRassenWahl(): List<UnterrassenWahl>{
         return listOf(
-            UnterrassenWahl(R.string.goblins,0,10,10,0,5,0,0,10,0,0,0,0,0,0),
-            UnterrassenWahl(R.string.ork,10,5,0,10,0,0,0,0,0,15,0,0,15,0),
-            UnterrassenWahl(R.string.trolle,15,0,0,15,0,0,0,0,0,15,0,0,20,0),
-            UnterrassenWahl(R.string.blutelfen,0,0,10,0,0,5,0,5,0,0,5,0,0,0),
+            UnterrassenWahl(R.string.goblins,-10,10,10,0,5,0,0),
+            UnterrassenWahl(R.string.ork,10,5,-15,10,0,-15,0),
+            UnterrassenWahl(R.string.trolle,15,0,-15,15,0,-20,0),
+            UnterrassenWahl(R.string.blutelfen,-5,0,10,-5,0,5,0),
             UnterrassenWahl(R.string.dunkelelfen,10,10,10,0,0,0,0,0,0,0,0,0,0,0),
             UnterrassenWahl(R.string.eisenelfen,0,0,15,0,5,5,0,5,0,0,0,0,0,0),
             UnterrassenWahl(R.string.hochelfen,0,0,20,0,15,5,0,15,0,0,10,0,5,0),
