@@ -7,6 +7,8 @@ import com.example.worldadventure.databinding.CharaktererstellenBinding
 
 class CharakterErstellung(): AppCompatActivity() {
     private lateinit var binding: CharaktererstellenBinding
+    Hallo
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
