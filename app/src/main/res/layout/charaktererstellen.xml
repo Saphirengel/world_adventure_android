@@ -113,6 +113,7 @@
             android:id="@+id/tv_staerke_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="1"
             android:textColor="#FFC107"
             android:textSize="24sp" />
 
@@ -120,6 +121,7 @@
             android:id="@+id/tv_geschicklichkeit_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="1"
             android:textColor="#FFC107"
             android:textSize="24sp" />
 
@@ -127,6 +129,7 @@
             android:id="@+id/tv_intelligenz_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="1"
             android:textColor="#FFC107"
             android:textSize="24sp" />
 
@@ -134,6 +137,7 @@
             android:id="@+id/tv_konstitution_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="1"
             android:textColor="#FFC107"
             android:textSize="24sp" />
 
@@ -141,6 +145,7 @@
             android:id="@+id/tv_weisheit_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="1"
             android:textColor="#FFC107"
             android:textSize="24sp" />
 
@@ -148,6 +153,7 @@
             android:id="@+id/tv_charisma_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="1"
             android:textColor="#FFC107"
             android:textSize="24sp" />
 
@@ -155,6 +161,7 @@
             android:id="@+id/tv_glueck_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="1"
             android:textColor="#FFC107"
             android:textSize="24sp" />
     </LinearLayout>
@@ -429,6 +436,7 @@
         android:text="Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?Auch gibt es niemanden, der den Schmerz"
         android:textColor="#FFC107"
         android:textColorHighlight="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/iv_avatar"
         app:layout_constraintTop_toBottomOf="@+id/sp_unterrasse" />
 

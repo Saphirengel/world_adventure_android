@@ -1,13 +1,19 @@
 package com.example.worldadventure.data
 
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import com.example.worldadventure.R
 import com.example.worldadventure.databinding.CharaktererstellenBinding
 
 class CharakterErstellung(): AppCompatActivity() {
     private lateinit var binding: CharaktererstellenBinding
-    Hallo
+    private lateinit var oberrasseSpinner: Spinner
+    private lateinit var unterrasseSpinner: Spinner
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +21,63 @@ class CharakterErstellung(): AppCompatActivity() {
         binding =CharaktererstellenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val ausgewählteOberrassenWahl = oberRassenWahl()[0]
+        val ausgewählteUnterrassenWahl = unterRassenWahl()[0]
+
+        oberrasseSpinner = findViewById(R.id.sp_oberrasse)
+        unterrasseSpinner = findViewById(R.id.sp_unterrasse)
+        val oberrasse = oberRassenWahl()
+        val unterrasse = unterRassenWahl()
+
+        val oberrassenAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, oberrasse.map{it.name})
+        oberrassenAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        oberrasseSpinner.adapter = oberrassenAdapter
+
+        val unterrassenAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, oberrasse.map{it.name})
+        unterrassenAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        oberrasseSpinner.adapter = unterrassenAdapter
+
+
+        oberrasseSpinner.onItemSelectedListener = object : AdapterView.onItemSelectedListener{
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int){
+                val ausgewählteOberrassenWahl = oberrasse[position]
+            }
+
+            fun onNothingSelected(parent:AdapterView<*>?){}
+        }
+
+        unterrasseSpinner.onItemSelectedListener = object : AdapterView.onItemSelectedListener{
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int){
+                val ausgewählteUnterrassenWahl = oberrasse[position]
+            }
+
+            fun onNothingSelected(parent:AdapterView<*>?){}
+        }
+
+        val hero = CharakterWerte(
+            ausgewählteOberrassenWahl.strenghtModifier..ausgewählteOberrassenWahl.strenghtModifier + ausgewählteUnterrassenWahl.strenghtModifier,
+            ausgewählteOberrassenWahl.dexteryModifier..ausgewählteOberrassenWahl.strenghtModifier +ausgewählteUnterrassenWahl.dexteryModifier,
+            ausgewählteOberrassenWahl.intelligenceModifier..ausgewählteOberrassenWahl.intelligenceModifier +ausgewählteUnterrassenWahl.intelligenceModifier,
+            ausgewählteOberrassenWahl.constuionModifier..ausgewählteOberrassenWahl.constuionModifier +ausgewählteUnterrassenWahl.constuionModifier,
+            ausgewählteOberrassenWahl.wisdomModifier..ausgewählteOberrassenWahl.wisdomModifier +ausgewählteUnterrassenWahl.wisdomModifier,
+            ausgewählteOberrassenWahl.charismaModifier..ausgewählteOberrassenWahl.charismaModifier +ausgewählteUnterrassenWahl.charismaModifier,
+            ausgewählteOberrassenWahl.luckModifier..ausgewählteOberrassenWahl.luckModifier +ausgewählteUnterrassenWahl.luckModifier,
+            )
+
+        binding.tvStaerkeZahl.text =hero.strenghtRange.random().toString()
+        binding.tvGeschicklichkeitZahl.text =hero.dexteryRange.random().toString()
+        binding.tvIntelligenzZahl.text =hero.intelligenceRange.random().toString()
+        binding.tvKonstitutionZahl.text =hero.constituionRange.random().toString()
+        binding.tvWeisheitZahl.text =hero.wisdomRange.random().toString()
+        binding.tvCharismaZahl.text =hero.charismaRange.random().toString()
+        binding.tvGlueckZahl.text =hero.luckRange.random().toString()
+
+
+        fun getAusgewählteRasse(): Pair<OberrassenWahl, UnterrassenWahl>{
+            val ausgewählteOberrassenWahl = oberRassenWahl()[0]
+            val ausgewählteUnterrassenWahl = unterRassenWahl()[0]
+            return Pair(ausgewählteOberrassenWahl, ausgewählteUnterrassenWahl)
+        }
 
     }
     fun oberRassenWahl(): List<OberrassenWahl>{
