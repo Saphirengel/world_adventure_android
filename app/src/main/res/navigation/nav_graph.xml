@@ -23,7 +23,11 @@
     <fragment
         android:id="@+id/charakterertellenFragment"
         android:name="com.example.worldadventure.ui.CharakterertellenFragment"
-        android:label="CharakterertellenFragment" />
+        android:label="CharakterertellenFragment" >
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/optionsFragment"
         android:name="com.example.worldadventure.ui.OptionsFragment"

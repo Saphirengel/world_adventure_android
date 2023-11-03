@@ -2,11 +2,15 @@ package com.example.worldadventure.data
 
 
 import com.example.worldadventure.R
+import com.example.worldadventure.data.model.CharakterWerte
+import com.example.worldadventure.data.model.OberrassenWahl
+import com.example.worldadventure.data.model.UnterrassenWahl
 
 class CharakterErstellung() {
 
-    fun oberRassenWahl(): List<OberrassenWahl> {
-        return listOf(
+    val hero = CharakterWerte(1..20,1..20,1..20,1..20,1..20,1..20,1..20)
+
+    val oberRassenWahl =  listOf(
             OberrassenWahl(R.string.goblinoiden, 0, 5, -8, 8, 0, -8, 0),
             OberrassenWahl(R.string.elfen, -5, 10, 5, -5, 10, 0, 0),
             OberrassenWahl(R.string.zwerg, 8, 0, 0, 10, 0, -5, 5),
@@ -17,10 +21,9 @@ class CharakterErstellung() {
             OberrassenWahl(R.string.konstrukte, 8, -8, 0, 8, 5, -8, 0),
             OberrassenWahl(R.string.fabelwesen, 0, 0, 8, 5, 8, 0, 0),
         )
-    }
 
-    fun unterRassenWahl(): List<UnterrassenWahl> {
-        return listOf(
+
+    val unterRassenWahl = listOf(
             UnterrassenWahl(R.string.goblins, -8, 8, 8, 0, 5, 0, 0),
             UnterrassenWahl(R.string.ork, 8, 5, -8, 8, 0, -8, 0),
             UnterrassenWahl(R.string.trolle, 8, 0, -8, 8, 0, -8, 0),
@@ -49,5 +52,17 @@ class CharakterErstellung() {
             UnterrassenWahl(R.string.golem, 0, 0, 0, 8, 0, -8, 0),
             UnterrassenWahl(R.string.Dchjiinn, 0, 0, 8, 0, 8, -8, 0)
         )
-    }
+
+        fun getHeld(): CharakterWerte{
+                return hero
+        }
+
+        fun getOber(): List<OberrassenWahl>{
+                return oberRassenWahl
+        }
+
+        fun getUnter(): List<UnterrassenWahl>{
+                return unterRassenWahl
+        }
+
 }

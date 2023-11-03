@@ -1,4 +1,4 @@
-package com.example.worldadventure.data
+package com.example.worldadventure.data.model
 
 data class CharakterWerte(
     val strenghtRange: IntRange,
