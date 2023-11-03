@@ -16,6 +16,7 @@ import com.example.worldadventure.R
 import com.example.worldadventure.data.CharakterErstellung
 import com.example.worldadventure.data.model.CharakterWerte
 import com.example.worldadventure.data.model.OberrassenWahl
+import com.example.worldadventure.data.model.UnterrassenWahl
 import com.example.worldadventure.databinding.CharaktererstellenBinding
 
 
@@ -39,14 +40,14 @@ class CharakterertellenFragment(): Fragment() {
         val oberrasse = CharakterErstellung().getOber()
         val unterrasse = CharakterErstellung().getUnter()
 
-        val staerke = charakter.strenghtRange + OberrassenWahl.
-        val geschicklichkeit
-        val intelligenz
-        val konstitution
-        val weisheit
-        val charisma
-        val glueck
+        val staerke = charakter.strenghtRange + oberrasse.get(0) + unterrasse.get(0)
+       // val geschicklichkeit
+        //val intelligenz
+       // val konstitution
+       // val weisheit
+       // val charisma
+       // val glueck
 
-
+    binding.tvStaerkeZahl.text = staerke.toString()
     }
 }
