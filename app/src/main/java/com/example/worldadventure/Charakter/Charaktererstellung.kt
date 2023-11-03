@@ -9,22 +9,16 @@ import com.example.worldadventure.databinding.CharaktererstellenBinding
 
 class Charaktererstellung(
 
-    val strenghtRange: IntRange,
-    val dexteryRange: IntRange,
-    val intelligenceRange: IntRange,
-    val constituionRange: IntRange,
-    val wisdomRange: IntRange,
-    val charismaRange: IntRange,
-    val luckRange: IntRange
-) : AppCompatActivity() {
-    private lateinit var binding: CharaktererstellenBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-        binding = CharaktererstellenBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        zufallsZahlen()
-        binding.tvStaerkeZahl.text = strenght.toString()
-}
+    var strenghtRange: IntRange,
+    var dexteryRange: IntRange,
+     var intelligenceRange: IntRange,
+    var constituionRange: IntRange,
+    var wisdomRange: IntRange,
+    var charismaRange: IntRange,
+    var luckRange: IntRange
+)  {
+
+
 
     var strenght: Int = 0
     var dextery: Int = 0
@@ -44,6 +38,7 @@ class Charaktererstellung(
         wisdom = wisdomRange.random()
         charisma = charismaRange.random()
         luck = luckRange.random()
+
 
 
     }

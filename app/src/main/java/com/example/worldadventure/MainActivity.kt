@@ -17,13 +17,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: CharaktererstellenBinding
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = CharaktererstellenBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
     }
 }
-
-
-

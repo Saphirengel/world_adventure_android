@@ -113,57 +113,92 @@
             android:id="@+id/tv_staerke_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
             android:text="1"
+            android:textAlignment="center"
             android:textColor="#FFC107"
-            android:textSize="24sp" />
+            android:textDirection="locale"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_geschicklichkeit_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
             android:text="1"
+            android:textAlignment="center"
             android:textColor="#FFC107"
-            android:textSize="24sp" />
+            android:textDirection="locale"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_intelligenz_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
             android:text="1"
+            android:textAlignment="center"
             android:textColor="#FFC107"
-            android:textSize="24sp" />
+            android:textDirection="locale"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_konstitution_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
             android:text="1"
+            android:textAlignment="center"
             android:textColor="#FFC107"
-            android:textSize="24sp" />
+            android:textDirection="locale"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_weisheit_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
             android:text="1"
+            android:textAlignment="center"
             android:textColor="#FFC107"
-            android:textSize="24sp" />
+            android:textDirection="locale"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_charisma_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
             android:text="1"
+            android:textAlignment="center"
             android:textColor="#FFC107"
-            android:textSize="24sp" />
+            android:textDirection="locale"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_glueck_zahl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bridgnorth_regular"
             android:text="1"
             android:textColor="#FFC107"
-            android:textSize="24sp" />
+            android:textDirection="locale"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <RadioGroup
@@ -359,6 +394,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:background="#3F51B5"
+        android:spinnerMode="dropdown"
         app:layout_constraintStart_toEndOf="@+id/ll_wert_zahl"
         app:layout_constraintTop_toBottomOf="@+id/sp_oberrasse" />
 
@@ -433,7 +469,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/bridgnorth_regular"
-        android:text="Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?Auch gibt es niemanden, der den Schmerz"
+        android:text="w34895730239fzuesf"
         android:textColor="#FFC107"
         android:textColorHighlight="#FFC107"
         app:layout_constraintEnd_toEndOf="parent"

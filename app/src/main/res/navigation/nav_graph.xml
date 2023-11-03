@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.worldadventure.ui.IntroFragment"
+        android:label="IntroFragment" >
+        <action
+            android:id="@+id/action_introFragment_to_storyFragment"
+            app:destination="@id/storyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyFragment"
+        android:name="com.example.worldadventure.ui.StoryFragment"
+        android:label="StoryFragment" >
+        <action
+            android:id="@+id/action_storyFragment_to_startmenueFragment"
+            app:destination="@id/startmenueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/charakterertellenFragment"
+        android:name="com.example.worldadventure.ui.CharakterertellenFragment"
+        android:label="CharakterertellenFragment" />
+    <fragment
+        android:id="@+id/optionsFragment"
+        android:name="com.example.worldadventure.ui.OptionsFragment"
+        android:label="OptionsFragment" />
+    <fragment
+        android:id="@+id/startmenueFragment"
+        android:name="com.example.worldadventure.ui.StartmenueFragment"
+        android:label="StartmenueFragment" >
+        <action
+            android:id="@+id/action_startmenueFragment_to_charakterertellenFragment"
+            app:destination="@id/charakterertellenFragment" />
+        <action
+            android:id="@+id/action_startmenueFragment_to_optionsFragment"
+            app:destination="@id/optionsFragment" />
+    </fragment>
+</navigation>
