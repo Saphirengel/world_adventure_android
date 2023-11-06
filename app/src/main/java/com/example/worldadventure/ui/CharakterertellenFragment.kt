@@ -40,6 +40,7 @@ class CharakterertellenFragment(): Fragment() {
         val oberrasse = CharakterErstellung().getOber()
         val unterrasse = CharakterErstellung().getUnter()
 
+
         val staerke = charakter.strenghtRange.random() + oberrasse[position].strenghtModifier + unterrasse[position].strenghtModifier
         val geschicklichkeit = charakter.dexteryRange + oberrasse.get(1) + unterrasse.get(1)
         val intelligenz = charakter.intelligenceRange + oberrasse.get(2) + unterrasse.get(2)
