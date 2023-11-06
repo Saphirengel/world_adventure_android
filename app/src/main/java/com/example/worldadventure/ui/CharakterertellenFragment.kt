@@ -1,13 +1,16 @@
 package com.example.worldadventure.ui
 
 import android.R
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.SpinnerAdapter
 import androidx.fragment.app.Fragment
 import com.example.worldadventure.data.CharakterErstellung
+import com.example.worldadventure.data.model.Rassenclans
 import com.example.worldadventure.databinding.CharaktererstellenBinding
 
 
@@ -62,6 +65,13 @@ class CharakterertellenFragment() : Fragment() {
         binding.tvGlueckZahl.text = glueck.toString()
         binding.spOberrasse.dropDownHorizontalOffset = clan.size - 1
         binding.spUnterrasse.dropDownHorizontalOffset = volk.size - 1
+    }
+
+    private fun <T> ArrayAdapter(requireContext: Context, simpleSpinnerItem: Int, item: List<Rassenclans>): SpinnerAdapter? {
+        var setDropDownViewResource = SpinnerFragment()
+        val adapter = context?.let { ArrayAdapter(it, simpleSpinnerItem, item) }
+        adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
+        return adapter
     }
 
 }
