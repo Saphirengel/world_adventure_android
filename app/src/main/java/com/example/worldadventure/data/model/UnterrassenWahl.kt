@@ -1,7 +1,7 @@
 package com.example.worldadventure.data.model
 
 data class UnterrassenWahl(
-    var name: Int,
+    var name: Int?,
     var strenghtModifier: Int?,
     var dexteryModifier: Int?,
     var intelligenceModifier: Int?,
