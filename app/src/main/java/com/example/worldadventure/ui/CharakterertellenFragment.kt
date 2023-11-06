@@ -41,12 +41,12 @@ class CharakterertellenFragment(): Fragment() {
         val unterrasse = CharakterErstellung().getUnter()
 
         val staerke = charakter.strenghtRange + oberrasse.get(0) + unterrasse.get(0)
-       // val geschicklichkeit
-        //val intelligenz
-       // val konstitution
-       // val weisheit
-       // val charisma
-       // val glueck
+        val geschicklichkeit = charakter.dexteryRange + oberrasse.get(1) + unterrasse.get(1)
+        val intelligenz = charakter.intelligenceRange + oberrasse.get(2) + unterrasse.get(2)
+        val konstitution = charakter.constituionRange + oberrasse.get(3) + unterrasse.get(3)
+        val weisheit = charakter.wisdomRange + oberrasse.get(4) + unterrasse.get(4)
+        val charisma = charakter.charismaRange + oberrasse.get(5) + unterrasse.get(5)
+        val glueck = charakter.luckRange + oberrasse.get(6) +unterrasse.get(6)
 
     binding.tvStaerkeZahl.text = staerke.toString()
     }
