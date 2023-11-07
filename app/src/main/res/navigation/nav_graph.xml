@@ -27,6 +27,9 @@
         <argument
             android:name="position"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_charakterertellenFragment_to_spinnerFragment"
+            app:destination="@id/spinnerFragment" />
     </fragment>
     <fragment
         android:id="@+id/optionsFragment"
@@ -42,5 +45,16 @@
         <action
             android:id="@+id/action_startmenueFragment_to_optionsFragment"
             app:destination="@id/optionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/spinnerFragment"
+        android:name="com.example.worldadventure.ui.SpinnerFragment"
+        android:label="SpinnerFragment" >
+        <action
+            android:id="@+id/action_spinnerFragment_to_charakterertellenFragment"
+            app:destination="@id/charakterertellenFragment" />
+        <argument
+            android:name="setDropDownViewResource"
+            app:argType="integer" />
     </fragment>
 </navigation>

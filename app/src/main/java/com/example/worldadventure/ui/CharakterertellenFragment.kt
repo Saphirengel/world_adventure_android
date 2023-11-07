@@ -37,8 +37,10 @@ class CharakterertellenFragment() : Fragment() {
         val volk = CharakterErstellung().getVolk()
         var spinner = binding.spOberrasse
         var item  = CharakterErstellung().getClans()
-        val adapter = ArrayAdapter<String>(requireContext(), R.layout.simple_spinner_item, item)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        val adapter = context?.let { ArrayAdapter(it, R.layout.simple_spinner_item, item) }
+        if (adapter != null) {
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        }
         spinner.adapter = adapter
         val staerke =
             charakter.strenghtRange.random() + oberrasse[position].strenghtModifier!! + unterrasse[position].strenghtModifier!!
@@ -63,13 +65,12 @@ class CharakterertellenFragment() : Fragment() {
         binding.tvWeisheitZahl.text = weisheit.toString()
         binding.tvCharismaZahl.text = charisma.toString()
         binding.tvGlueckZahl.text = glueck.toString()
-        binding.spOberrasse.dropDownHorizontalOffset = clan.size - 1
+
         binding.spUnterrasse.dropDownHorizontalOffset = volk.size - 1
     }
 
-    private fun <T> ArrayAdapter(requireContext: Context, simpleSpinnerItem: Int, item: List<Rassenclans>): SpinnerAdapter? {
-        var setDropDownViewResource = SpinnerFragment()
-        val adapter = context?.let { ArrayAdapter(it, simpleSpinnerItem, item) }
+    private fun creatArrayAdapter(context: Context, simpleSpinnerItem: Int, item: List<Rassenclans>): SpinnerAdapter? {
+        val adapter = ArrayAdapter(context,simpleSpinnerItem ,item)
         adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
         return adapter
     }
